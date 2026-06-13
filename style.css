@@ -16,21 +16,15 @@ body {
 
 .menu {
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 92%;
-    max-width: 1400px;
+    width: 100%;
+    padding: 15px 4%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99999999999;
+
+    z-index: 9999;
 }
 
 .btn-top {
@@ -728,6 +722,11 @@ body {
     color: #888;
 }
 
+.menu-mobile,
+.nav-menu{
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
 
 
@@ -771,7 +770,7 @@ body {
         padding: 15px 5%;
         flex-direction: column;
         gap: 15px;
-        background: rgba(0, 0, 0, .9);
+        background: transparent;
     }
 
     .menu nav ul {
@@ -873,6 +872,7 @@ body {
 
     .menu {
         flex-direction: row;
+        left: 0;
     }
 
     .menu {
@@ -908,9 +908,16 @@ body {
     .btn-top {
         display: none;
     }
+
+    .grid-projetos,
+    .grid-equipe,
+    .cards-diferenciais,
+    .cards-depoimentos {
+        grid-template-columns: 1fr;
+    }
 }
 
-.menu-mobile,
-.nav-menu {
-    display: none;
+.ch{
+    display: flex;
+    justify-content: center;;
 }
