@@ -759,6 +759,10 @@ body {
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .tit p{
+        font-size: 10px;
+    }
 }
 
 
