@@ -919,9 +919,20 @@ body {
     .cards-depoimentos {
         grid-template-columns: 1fr;
     }
+
+    .membro img{
+        height: 1000px;
+    }
 }
 
 .ch{
     display: flex;
     justify-content: center;;
+}
+
+@media screen and (max-width: 768px) {
+
+    .membro img{
+        height: 400px;
+    }
 }
